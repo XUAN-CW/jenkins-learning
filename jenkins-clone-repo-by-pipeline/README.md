@@ -38,11 +38,19 @@ jenkins 使用 pipeline 克隆仓库
 
 ## 添加凭据
 
+### 添加凭据界面
+
 Manage Jenkins → Manage Credentials → 添加凭据
 
+![image-20220115220301081](assets/images/image-20220115220301081.png)
 
+### 添加凭据
 
+1. 选择凭据种类：Username with password
+2. 输入账号密码
+3. （非必须）输入描述
 
+![image-20220115220900866](assets/images/image-20220115220900866.png)
 
 
 
