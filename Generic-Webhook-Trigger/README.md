@@ -48,7 +48,9 @@ jenkins 自动构建
 
 ![image-20220116011605502](assets/images/image-20220116011605502.png)
 
-## hello world
+## Hello World
+
+Pipeline script 我们直接用 Hello World 就好
 
 # gitlab
 
