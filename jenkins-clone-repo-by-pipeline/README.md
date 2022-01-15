@@ -31,10 +31,11 @@ jenkins 使用 pipeline 克隆仓库
 
 ## 安装插件 
 
-| name     | version |
-| -------- | ------- |
-| Pipeline | 2.6     |
-| Git      | 4.10.2  |
+| name     | version | 安装位置           |
+| -------- | ------- | ------------------ |
+| Pipeline | 2.6     | Jenkins 插件       |
+| Git      | 4.10.2  | Jenkins 插件       |
+| git      | 1.8.3.1 | Jenkins 所在服务器 |
 
 ## 添加凭据
 
@@ -52,19 +53,23 @@ Manage Jenkins → Manage Credentials → 添加凭据
 
 ![image-20220115220900866](assets/images/image-20220115220900866.png)
 
+## 创建 job
 
+![image-20220115221057440](assets/images/image-20220115221057440.png)
 
+## 创建脚本
 
+### 进入 Pipeline Syntax
 
+![image-20220115221226137](assets/images/image-20220115221226137.png)
 
+### 片段生成器代码生成 clone 片段
 
-
-
-
-
-
-
-
+1. 选择 **checkout: Check out from version control**
+2. 选择 git
+3. 输入被拉取代码所在仓库。这个地方不要手动敲，要到 gitlab 仓库复制
+4. 选择进入被拉取代码所需的凭证
+5. 生成代码片段
 
 
 
