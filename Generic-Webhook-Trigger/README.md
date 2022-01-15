@@ -24,8 +24,6 @@ jenkins 自动构建
 | Pipeline                | 2.6     |
 | Generic Webhook Trigger | 1.79    |
 
-
-
 ## API Token
 
 ### 进入 Configure
@@ -34,7 +32,7 @@ jenkins 自动构建
 
 ### 生成 API Token
 
-生成 API Token 后记住这两个值
+生成 API Token 后记住这两个值，后面有用
 
 ![image-20220116013731667](assets/images/image-20220116013731667.png)
 
