@@ -67,3 +67,5 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
  [What is difference between .hpi and .jpi of Jenkins plugins.html](assets\references\What is difference between .hpi and .jpi of Jenkins plugins.html) 
 
+[Managing Plugins](https://www.jenkins.io/doc/book/managing/plugins/) 
+
