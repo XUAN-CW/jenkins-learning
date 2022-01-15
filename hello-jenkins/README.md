@@ -50,19 +50,19 @@ source /etc/profile
 java -version
 ```
 
-# 安装 Jenkins
+## Jenkins 安装与启动
 
-## 下载
+### 下载
 
 这里我选择 ：jenkins-2.289.3-1.1.noarch.rpm | [直接下载](https://github.com/jenkinsci/jenkins/releases/download/jenkins-2.289.3/jenkins-2.289.3-1.1.noarch.rpm) | [下载页面](https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.289.3) 
 
-## 安装依赖
+### 安装依赖
 
 ```sh
 yum install fontconfig-2.13.0-4.3.el7.x86_64 -y
 ```
 
-## 安装
+### 安装 jenkins 
 
 将 jenkins-2.289.3-1.1.noarch.rpm 上传到虚拟机，然后执行下面的安装命令：
 
@@ -84,7 +84,18 @@ Updating / installing...
 [root@localhost ~]#
 ```
 
+### 启动 jenkins 
 
+执行以下命令启动 jenkins ，此处说明两个问题：
+
+1. 如果你没有把 jdk 安装在 jenkins 默认 jdk 路径上，那你就需要修改配置文件，否则此处启动失败
+2. jenkins 默认端口是8080 ，这里懒得改 jenkins 端口了，自行解决端口冲突问题
+
+```sh
+systemctl start jenkins
+```
+
+# 访问 Jenkins 
 
 
 
