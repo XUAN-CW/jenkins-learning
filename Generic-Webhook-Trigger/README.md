@@ -82,7 +82,7 @@ Test → Push events 后出现：
 
 ![image-20220116013206535](assets/images/image-20220116013206535.png)
 
-并且 Jenkins 开始构建任务
+并且 Jenkins 开始构建任务则为成功
 
 
 
