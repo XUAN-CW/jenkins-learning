@@ -37,8 +37,6 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 ## Jenkins 插件的迁移
 
-这个方法适用于以前已经装过插件的情况
-
 ### JENKINS_HOME 的位置
 
 点击 Manage Jenkins → Configure System ，即可看见 **Home directory** ，下面的 **/var/lib/jenkins** 就是 `JENKINS_HOME` 
