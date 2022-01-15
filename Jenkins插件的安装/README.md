@@ -41,6 +41,22 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 
 
+
+
+
+
+
+
+
+
+
+
+```sh
+ls *.jpi | awk -F "." '{print $1}' | xargs -i -t mv {}.jpi {}.hpi
+```
+
+
+
 # 参考
 
  [10分钟教会你Jenkins数据迁移和备份.html](assets\references\10分钟教会你Jenkins数据迁移和备份.html) 
