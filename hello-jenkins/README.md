@@ -20,7 +20,7 @@ Jenkins 的安装
 
 jenkins 基于Java ，所以这里需要安装 jdk 
 
-### 版本选择
+### 下载
 
 这里我选择 jdk-11.0.12_linux-x64_bin.tar.gz | [下载地址](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) 
 
