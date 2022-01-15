@@ -42,13 +42,47 @@ jenkins 自动构建
 
 
 
+## 创建 job
+
+![image-20220116011401743](assets/images/image-20220116011401743.png)
+
+## Generic Webhook Trigger
+
+![image-20220116011605502](assets/images/image-20220116011605502.png)
+
+## hello world
+
+# gitlab
+
+## Outbound requests
+
+![image-20220116010620942](assets/images/image-20220116010620942.png)
+
+## 创建项目
+
+![image-20220116005750577](assets/images/image-20220116005750577.png)
 
 
 
+## Integrations
 
+![image-20220116012109073](assets/images/image-20220116012109073.png)
 
+## URL
 
+```
+http://admin:11713304e6422e73e7a972f61df4b050c1@192.168.19.10:8080/generic-webhook-trigger/invoke
+```
 
+![image-20220116013006535](assets/images/image-20220116013006535.png)
+
+# Test
+
+Test → Push events 后出现：
+
+![image-20220116013206535](assets/images/image-20220116013206535.png)
+
+并且 Jenkins 开始构建任务
 
 
 
