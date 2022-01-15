@@ -22,7 +22,7 @@ jenkins 基于Java ，所以这里需要安装 jdk
 
 ### 下载
 
-这里我选择 jdk-11.0.12_linux-x64_bin.tar.gz | [下载地址](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html) 
+这里我选择 jdk-8u161-linux-x64.tar.gz | [下载地址](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html) 
 
 ### 安装
 
@@ -30,13 +30,13 @@ jenkins 基于Java ，所以这里需要安装 jdk
 
 ```sh
 # 这个路径是 jenkins 的默认 jdk 路径之一,如果你把 jdk 装在这个目录下,后面就不用改配置文件了
-JDK_FOR_JENKINS=/usr/lib/jvm/java-11.0
+JDK_FOR_JENKINS=/usr/lib/jvm/java-1.8.0/bin/java
 # 创建 jdk 存放目录
 mkdir -p ${JDK_FOR_JENKINS}
-# 解压 jdk-11.0.12_linux-x64_bin.tar.gz 
-tar -zxvf jdk-11.0.12_linux-x64_bin.tar.gz
+# 解压 jdk-8u161-linux-x64.tar.gz
+tar -zxvf jdk-8u161-linux-x64.tar.gz
 # 移动到 jenkins 的默认 jdk 路径
-mv jdk-11.0.12/* ${JDK_FOR_JENKINS} && rmdir jdk-11.0.12
+mv jdk1.8.0_161/* ${JDK_FOR_JENKINS} && rmdir jdk1.8.0_161
 # 配置环境变量
 cp /etc/profile /etc/profile.backup
 echo "JAVA_HOME=${JDK_FOR_JENKINS}" >> /etc/profile
@@ -49,6 +49,8 @@ source /etc/profile
 # 查看是否安装完成
 java -version
 ```
+
+如果你想把 jdk 安装在其他位置，那么你就要修改配置文件 `/etc/init.d/jenkins` ，添加 JAVA_HOME
 
 ## Jenkins 安装与启动
 
