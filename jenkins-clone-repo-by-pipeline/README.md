@@ -79,7 +79,7 @@ Manage Jenkins → Manage Credentials → 添加凭据
 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '6eb76399-5a78-48a0-90dc-427141198d53', url: 'http://192.168.19.10:8000/root/jenkins-clone-demo-repo.git']]])
 ```
 
-### 得到最终脚本
+### 最终脚本
 
 这里我们借助 **Hello World** 生成脚本模板
 
@@ -121,6 +121,32 @@ pipeline {
 ### 查看 clone 的仓库
 
 ![image-20220115224915787](assets/images/image-20220115224915787.png)
+
+
+
+# Pipeline script from SCM
+
+pipeline 脚本直接写在 Jenkins 里面不便于管理，因此我们需要把它跟我们的项目放在一起
+
+## Jenkinsfile
+
+在刚才 clone 的仓库里添加 **Jenkinsfile** ，里面的内容就是上面填写的脚本，参考 [最终脚本](#最终脚本) 
+
+![image-20220115230105842](assets/images/image-20220115230105842.png)
+
+## configure
+
+1. 选择 **Pipeline script from SCM** 
+2. 选择 **Git** 
+3. 输入被拉取代码所在仓库。这个地方不要手动敲，要到 gitlab 仓库复制
+4. 选择进入被拉取代码所需的凭证
+5. 填写 **Script Path** ，这个地方一般不用改，填 Jenkinsfile 就好
+
+![image-20220115230334393](assets/images/image-20220115230334393.png)
+
+
+
+
 
 
 
