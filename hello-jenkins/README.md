@@ -89,7 +89,7 @@ Updating / installing...
 执行以下命令启动 jenkins ，此处说明两个问题：
 
 1. 如果你没有把 jdk 安装在 jenkins 默认 jdk 路径上，那你就需要修改配置文件，否则此处启动失败
-2. jenkins 默认端口是8080 ，这里懒得改 jenkins 端口了，自行解决端口冲突问题
+2. jenkins 默认端口是8080 ，这里懒得改 jenkins 端口了，直接用默认的。想改的话修改 `/etc/sysconfig/jenkins` 中的 `JENKINS_PORT="8080"` 即可
 
 ```sh
 systemctl start jenkins
