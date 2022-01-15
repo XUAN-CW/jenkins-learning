@@ -37,7 +37,7 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 ## Jenkins 插件的迁移
 
-这种适合以前已经装过了的情况
+这个方法适用于以前已经装过插件的情况
 
 ### JENKINS_HOME 的位置
 
