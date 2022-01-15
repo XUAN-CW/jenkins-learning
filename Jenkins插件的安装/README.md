@@ -63,7 +63,7 @@ wget https://github.com/jenkinsci/plugin-installation-manager-tool/releases/down
 ### 测试
 
 ```sh
-# c jenkins.war 
+# 查找 jenkins.war 
 find / -name jenkins.war
 ```
 
@@ -71,15 +71,7 @@ find / -name jenkins.war
 java -jar /var/lib/jenkins/plugins/jenkins-plugin-manager-2.12.3.jar --war /usr/lib/jenkins/jenkins.war --view-security-warnings --verbose --jenkins-update-center='https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates'  --plugins gitlab-hook:1.4.2 -d /jenkins
 ```
 
-
-
-
-
-
-
-## 修改下载地址
-
-
+## 下载加速
 
 ```
 # 修改前
@@ -87,10 +79,6 @@ https://updates.jenkins.io/update-center.json
 # 修改后
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 ```
-
-
-
-
 
 # 参考
 
