@@ -31,8 +31,10 @@ jenkins 使用 pipeline 克隆仓库
 
 ## 安装插件 
 
-1. workflow-aggregator:2.6 (搜索 pipeline安装，我也不知道为毛 Pipeline 的插件名字是这个)
-2. 
+| name     | version |
+| -------- | ------- |
+| Pipeline | 2.6     |
+| Git      | 4.10.2  |
 
 ## 添加凭据
 
