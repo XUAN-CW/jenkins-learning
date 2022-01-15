@@ -51,18 +51,29 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 [jenkins-plugin-manager-2.12.3.jar](https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/2.12.3/jenkins-plugin-manager-2.12.3.jar) | [下载页面](https://github.com/jenkinsci/plugin-installation-manager-tool/releases/tag/2.12.3) | [官网](https://github.com/jenkinsci/plugin-installation-manager-tool)
 
-
-
-
+### 下载
 
 ```sh
 # 找个地方放 jenkins-plugin-manager
 cd /var/lib/jenkins/plugins
 # 下载 jenkins-plugin-manager
 wget https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/2.12.3/jenkins-plugin-manager-2.12.3.jar
-# 取别名
-alias jenkins-plugin-cli='java -jar /var/lib/jenkins/plugins/jenkins-plugin-manager-2.12.3.jar'
 ```
+
+### 测试
+
+```sh
+# c jenkins.war 
+find / -name jenkins.war
+```
+
+```sh
+java -jar /var/lib/jenkins/plugins/jenkins-plugin-manager-2.12.3.jar --war /usr/lib/jenkins/jenkins.war --view-security-warnings --verbose --jenkins-update-center='https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates'  --plugins gitlab-hook:1.4.2 -d /jenkins
+```
+
+
+
+
 
 
 
