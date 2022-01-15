@@ -36,7 +36,7 @@ jenkins 自动构建
 
 生成 API Token 后记住这两个值
 
-![image-20220116005206148](assets/images/image-20220116005206148.png)
+![image-20220116013731667](assets/images/image-20220116013731667.png)
 
 
 
