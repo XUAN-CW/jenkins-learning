@@ -47,15 +47,35 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 `JENKINS_HOME/plugins` 文件夹下有一堆 jpi 文件，这些 jpi 文件就是 Jenkins 插件的安装包。我们把它下载下来，哪里需要安装插件就把它们传到哪里的  `JENKINS_HOME/plugins` 文件夹下，然后重启 Jenkins ，这样就安装好插件了
 
-## Jenkins CLI
+## jenkins-plugin-cli
 
-###  jenkins-cli.jar
+[jenkins-plugin-manager-2.12.3.jar](https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/2.12.3/jenkins-plugin-manager-2.12.3.jar) | [下载页面](https://github.com/jenkinsci/plugin-installation-manager-tool/releases/tag/2.12.3) | [官网](https://github.com/jenkinsci/plugin-installation-manager-tool)
 
-点击 Manage Jenkins → Jenkins CLI 可见如下页面：
 
-![image-20220115185046539](assets/images/image-20220115185046539.png)
 
-从页面中下载  **jenkins-cli.jar** 然后传到服务器上，我们就有 Jenkins CLI 可用了
+
+
+```sh
+# 找个地方放 jenkins-plugin-manager
+cd /var/lib/jenkins/plugins
+# 下载 jenkins-plugin-manager
+wget https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/2.12.3/jenkins-plugin-manager-2.12.3.jar
+# 取别名
+alias jenkins-plugin-cli='java -jar /var/lib/jenkins/plugins/jenkins-plugin-manager-2.12.3.jar'
+```
+
+
+
+## 修改下载地址
+
+
+
+```
+# 修改前
+https://updates.jenkins.io/update-center.json
+# 修改后
+https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
+```
 
 
 
@@ -69,3 +89,6 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 [Managing Plugins](https://www.jenkins.io/doc/book/managing/plugins/) 
 
+# 相关网站
+
+ [清华大学开源软件镜像站-Jenkins](https://mirrors.tuna.tsinghua.edu.cn/jenkins/) 
