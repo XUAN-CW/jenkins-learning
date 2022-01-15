@@ -73,12 +73,16 @@ java -jar /var/lib/jenkins/plugins/jenkins-plugin-manager-2.12.3.jar --war /usr/
 
 ## 下载加速
 
+这里我们使用国内的镜像源，确保能够正常下载
+
 ```
 # 修改前
 https://updates.jenkins.io/update-center.json
 # 修改后
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 ```
+
+![image-20220115212112674](assets/images/image-20220115212112674.png)
 
 # 参考
 
