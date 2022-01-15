@@ -66,10 +66,46 @@ Manage Jenkins → Manage Credentials → 添加凭据
 ### 片段生成器代码生成 clone 片段
 
 1. 选择 **checkout: Check out from version control**
-2. 选择 git
+2. 选择 Git
 3. 输入被拉取代码所在仓库。这个地方不要手动敲，要到 gitlab 仓库复制
 4. 选择进入被拉取代码所需的凭证
 5. 生成代码片段
+
+![image-20220115223228154](assets/images/image-20220115223228154.png)
+
+生成的脚本如下：
+
+```groovy
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '6eb76399-5a78-48a0-90dc-427141198d53', url: 'http://192.168.19.10:8000/root/jenkins-clone-demo-repo.git']]])
+```
+
+### 得到最终脚本
+
+这里我们借助 **Hello World** 生成脚本模板
+
+![image-20220115223640241](assets/images/image-20220115223640241.png)
+
+结合上面片段生成器得到的片段，最终得到：
+
+```groovy
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '6eb76399-5a78-48a0-90dc-427141198d53', url: 'http://192.168.19.10:8000/root/jenkins-clone-demo-repo.git']]])
+            }
+        }
+    }
+}
+```
+
+
+
+
+
+
 
 
 
