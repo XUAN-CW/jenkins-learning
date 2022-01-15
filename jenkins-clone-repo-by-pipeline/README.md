@@ -29,13 +29,18 @@ jenkins 使用 pipeline 克隆仓库
 
 # Jenkins clone 仓库
 
+## 安装插件 
+
+1. workflow-aggregator:2.6 (搜索 pipeline安装，我也不知道为毛 Pipeline 的插件名字是这个)
+2. 
+
 ## 添加凭据
 
 Manage Jenkins → Manage Credentials → 添加凭据
 
 
 
-## 安装插件 pipeline
+
 
 
 
