@@ -35,25 +35,17 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 
 
+## JENKINS_HOME/plugins/ 安装
+
+这种适合以前已经装过了的情况
+
+### JENKINS_HOME 的位置
+
+点击 Manage Jenkins → Configure System ，即可看见 **Home directory** ，下面的 **/var/lib/jenkins** 就是 `JENKINS_HOME` 
+
+![image-20220115183001170](assets/images/image-20220115183001170.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```sh
-ls *.jpi | awk -F "." '{print $1}' | xargs -i -t mv {}.jpi {}.hpi
-```
 
 
 
@@ -61,5 +53,5 @@ ls *.jpi | awk -F "." '{print $1}' | xargs -i -t mv {}.jpi {}.hpi
 
  [10分钟教会你Jenkins数据迁移和备份.html](assets\references\10分钟教会你Jenkins数据迁移和备份.html) 
 
-
+ [What is difference between .hpi and .jpi of Jenkins plugins.html](assets\references\What is difference between .hpi and .jpi of Jenkins plugins.html) 
 
