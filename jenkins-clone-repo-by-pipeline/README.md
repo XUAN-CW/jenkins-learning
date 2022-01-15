@@ -99,25 +99,28 @@ pipeline {
         }
     }
 }
+
 ```
 
+### 填写脚本
 
+1. 选择 **Pipeline script** 
+2. 填写 **Script** 
+3. 点击 **save** 按钮
 
+![image-20220115225136510](assets/images/image-20220115225136510.png)
 
+## Build Now
 
+![image-20220115224152417](assets/images/image-20220115224152417.png)
 
+## 查看日志
 
+![image-20220115224300091](assets/images/image-20220115224300091.png)
 
+### 查看 clone 的仓库
 
-
-
-
-
-
-
-
-
-
+![image-20220115224915787](assets/images/image-20220115224915787.png)
 
 
 
