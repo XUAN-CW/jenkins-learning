@@ -50,7 +50,43 @@ source /etc/profile
 java -version
 ```
 
+# 安装 Jenkins
 
+## 下载
+
+这里我选择：
+
+- jenkins-2.289.3-1.1.noarch.rpm | [直接下载](https://github.com/jenkinsci/jenkins/releases/download/jenkins-2.289.3/jenkins-2.289.3-1.1.noarch.rpm) | [下载页面](https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.289.3) 
+
+## 安装依赖
+
+```sh
+yum install fontconfig-2.13.0-4.3.el7.x86_64 -y
+```
+
+## 安装
+
+将 jenkins-2.289.3-1.1.noarch.rpm 上传到虚拟机，然后执行下面的安装命令：
+
+```sh
+rpm -ivh jenkins-2.289.3-1.1.noarch.rpm 
+```
+
+不出意外，你可以看到下面的安装过程：
+
+```
+[root@localhost ~]# ls jenkins*
+jenkins-2.289.3-1.1.noarch.rpm
+[root@localhost ~]# 
+[root@localhost ~]# rpm -ivh jenkins-2.289.3-1.1.noarch.rpm 
+warning: jenkins-2.289.3-1.1.noarch.rpm: Header V4 RSA/SHA512 Signature, key ID 45f2c3d5: NOKEY
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:jenkins-2.289.3-1.1              ################################# [100%]
+[root@localhost ~]#
+```
+
+## 
 
 
 
