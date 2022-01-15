@@ -45,9 +45,9 @@ Manage Jenkins → Manage Plugins 进入插件管理界面
 
 ![image-20220115183001170](assets/images/image-20220115183001170.png)
 
+### jpi 文件 
 
-
-
+`JENKINS_HOME/plugins` 文件夹下有一堆 jpi 文件，这些 jpi 文件就是 Jenkins 插件的安装包。我们把它下载下来，哪里需要安装插件就把它们传到哪里的  `JENKINS_HOME/plugins` 文件夹下，然后重启 Jenkins ，这样就安装好插件了
 
 # 参考
 
