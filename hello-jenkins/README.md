@@ -30,7 +30,7 @@ jenkins 基于Java ，所以这里需要安装 jdk
 
 ```sh
 # 这个路径是 jenkins 的默认 jdk 路径之一,如果你把 jdk 装在这个目录下,后面就不用改配置文件了
-JDK_FOR_JENKINS=/usr/lib/jvm/java-1.8.0/bin/java
+JDK_FOR_JENKINS=/usr/lib/jvm/java-1.8.0
 # 创建 jdk 存放目录
 mkdir -p ${JDK_FOR_JENKINS}
 # 解压 jdk-8u161-linux-x64.tar.gz
