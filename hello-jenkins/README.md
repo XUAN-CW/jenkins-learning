@@ -97,6 +97,44 @@ systemctl start jenkins
 
 # 访问 Jenkins 
 
+## Jenkins 地址
+
+jenkins 的默认端口是 8080 ，访问地址则是 http://ipaddress/8080 。这里我的 ip 地址是 192.168.19.10 ，那么我应该访问 http://192.168.19.10:8080 。访问 jenkins 出现下面的页面是正常的，这表示 jenkins 正在启动，多等等就行
+
+![image-20220115144231693](assets/images/image-20220115144231693.png)
+
+## 解锁 Jenkins
+
+初次进入 Jenkins 需要管理员密码，根据提示，管理员密码在服务器的 `/var/lib/jenkins/secrets/initialAdminPassword` 中。在服务器上查看管理员密码并输入到页面中，在页面中点击 **继续** 即可进入 jenkins 
+
+```sh
+[root@localhost ~]# cat /var/lib/jenkins/secrets/initialAdminPassword
+5e09b6d3b76d40fd9511418eb002c868
+[root@localhost ~]# 
+```
+
+## 插件下载
+
+![image-20220115144529098](assets/images/image-20220115144529098.png)
+
+这里我们先不下载任何插件，这里我们执行三步：
+
+1. 选择右边的 **选择插件来安装** 
+2. 点击左上角的 **无** 
+3. 点击安装
+
+这里出问题了也不要紧，就是插件的安装而已，不会对后面的操作产生影响，大胆操作！
+
+## 创建第一个管理员账户
+
+这个地方简单了，就设个账号而已。这里我四个框都填了 `admin` 
+
+## 保存并完成
+
+直接点击右下角 **保存并完成** 即可
+
+
+
 
 
 
