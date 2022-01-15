@@ -19,12 +19,26 @@ jenkins 自动构建
 
 ## 插件安装
 
-## 安装插件 
-
 | name                    | version |
 | ----------------------- | ------- |
 | Pipeline                | 2.6     |
 | Generic Webhook Trigger | 1.79    |
+
+
+
+## API Token
+
+### 进入 Configure
+
+![image-20220116004839500](assets/images/image-20220116004839500.png)
+
+### 生成 API Token
+
+生成 API Token 后记住这两个值
+
+![image-20220116005206148](assets/images/image-20220116005206148.png)
+
+
 
 
 
