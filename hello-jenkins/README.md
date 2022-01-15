@@ -54,9 +54,7 @@ java -version
 
 ## 下载
 
-这里我选择：
-
-- jenkins-2.289.3-1.1.noarch.rpm | [直接下载](https://github.com/jenkinsci/jenkins/releases/download/jenkins-2.289.3/jenkins-2.289.3-1.1.noarch.rpm) | [下载页面](https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.289.3) 
+这里我选择 ：jenkins-2.289.3-1.1.noarch.rpm | [直接下载](https://github.com/jenkinsci/jenkins/releases/download/jenkins-2.289.3/jenkins-2.289.3-1.1.noarch.rpm) | [下载页面](https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.289.3) 
 
 ## 安装依赖
 
