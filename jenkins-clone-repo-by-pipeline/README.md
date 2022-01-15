@@ -27,11 +27,15 @@ jenkins 使用 pipeline 克隆仓库
 
 ![image-20220115214014997](assets/images/image-20220115214014997.png)
 
+# Jenkins clone 仓库
+
+## 添加凭据
+
+Manage Jenkins → Manage Credentials → 添加凭据
 
 
 
-
-
+## 安装插件 pipeline
 
 
 
