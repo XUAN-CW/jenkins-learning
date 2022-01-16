@@ -123,7 +123,9 @@ mvn -v
 | :----------------------------------------------------------- | :------ |
 | [ Maven Integration](https://plugins.jenkins.io/maven-plugin) | 3.16    |
 
+### Configure System 
 
+进入 Manage Jenkins → Configure System 
 
 
 
