@@ -52,9 +52,13 @@ id: 1642330661350248100
 
 ## 测试
 
+1. 点击 **Test configuration by sending test e-mail** 
+2. 输入一个邮箱
+3. 点击 **Test configuration** 
 
+如果能够收到邮件，则说明配置成功
 
-
+![image-20220116200351928](assets/images/image-20220116200351928.png)
 
 
 
