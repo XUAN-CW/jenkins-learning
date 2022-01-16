@@ -230,7 +230,13 @@ id: 1642330661350248100
 
 
 
+## jenkins
 
+### Default Content Type
+
+进入 Manage Jenkins → Configure System ，设置 **Default Content Type** 为 **HTML(text/html)** ：
+
+![image-20220116205155018](assets/images/image-20220116205155018.png)
 
 
 
