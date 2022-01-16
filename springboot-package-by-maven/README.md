@@ -67,6 +67,26 @@ git add . && git commit -a -m "hello-springboot"
 
  push 本地 hello-springboot 项目到远程仓库，然后你在远程仓库就可以看见创建好的 springboot 项目
 
+# Jenkins 安装配置 maven
+
+## 安装 maven
+
+```sh
+# 下载 maven 并解压
+curl -O https://dlcdn.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+tar -xvf apache-maven-3.6.3-bin.tar.gz
+mkdir -p /usr/local/maven && mv apache-maven-3.6.3/* /usr/local/maven
+# 配置 MAVEN_HOME 
+echo 'export MAVEN_HOME=/usr/local/maven' >> /etc/profile
+echo 'export PATH=${PATH}:${MAVEN_HOME}/bin' >> /etc/profile
+source /etc/profile
+# 查看是否安装完成
+mvn -v
+
+```
+
+
+
 
 
 
