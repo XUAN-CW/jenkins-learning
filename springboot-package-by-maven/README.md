@@ -27,11 +27,23 @@ id: 1642371811009915300
 
 准备一个 spring boot 的 hello world 项目即可
 
-## 创建项目
+## 创建 hello-springboot 仓库
 
-IDEA 中使用 [spring initializer](https://start.spring.io/) 创建项目，选择 **2.3.2.RELEASE** 版本（创建完了再改也行），勾选 **Web → Spring Web** 
+在 gitlab 中创建 hello-springboot 
 
-## HelloController.java
+## clone 
+
+clone  hello-springboot 项目
+
+## 创建 spring boot 项目
+
+### 创建项目
+
+IDEA 中使用 [spring initializer](https://start.spring.io/) 创建项目，选择 **2.3.2.RELEASE** 版本（创建完了再改也行），勾选 **Web → Spring Web** ，路径选择 clone 下来的项目
+
+### HelloController.java
+
+创建一个 controller 就够了
 
 ```java
 @RestController
@@ -43,9 +55,29 @@ public class HelloController {
 }
 ```
 
-## 创建仓库
+## commit
 
-把 hello-springboot 项目作为一个仓库，在  hello-springboot 文件夹下使用 Git Bash 执行 `git init .` 即可
+提交 spring boot 项目
+
+```sh
+git add . && git commit -a -m "hello-springboot"
+```
+
+## push
+
+ push 本地 hello-springboot 项目到远程仓库，然后你在远程仓库就可以看见创建好的 springboot 项目
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
