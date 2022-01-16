@@ -74,6 +74,8 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 
 ### 创建项目
 
+创建项目 Email-Extension-Template-demo-repo
+
 ![image-20220116203734858](assets/images/image-20220116203734858.png)
 
 ### 邮件模板
@@ -244,9 +246,32 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 
 ![image-20220116205155018](assets/images/image-20220116205155018.png)
 
-### 创建流水线项目
+### 创建 pipeline 项目
 
+```groovy
 
+pipeline {
+    agent any
+
+    stages {
+        stage('clone') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '6eb76399-5a78-48a0-90dc-427141198d53', url: 'http://192.168.19.10:8000/root/email-extension-template-demo-repo.git']]])
+            }
+        }
+    }
+    post {
+        always {
+            emailext(
+                subject: '构建通知：${PROJECT_NAME} - Build # ${BUILD_NUMBER} -${BUILD_STATUS}!',
+                body: '${FILE,path="jenkins-email-notification-template.html"}',
+                to: '3593141687@qq.com'
+            )
+        }
+    }
+}
+
+```
 
 
 
