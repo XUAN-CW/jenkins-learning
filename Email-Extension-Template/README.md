@@ -48,9 +48,7 @@ id: 1642330661350248100
 | Use SMTP Authentication → 密码   | ${授权码} 不是 QQ 密码！ |
 | SMTP Port                        | 587                      |
 
-
-
-
+![image-20220116195907883](assets/images/image-20220116195907883.png)
 
 ## 测试
 
