@@ -34,6 +34,24 @@ id: 1642330661350248100
 | Pipeline                 | 2.6     |
 | Email Extension Template | 1.4     |
 
+## Jenkins设置邮箱相关参数
+
+Manage Jenkins → Configure System
+
+### System Admin e-mail address
+
+
+
+
+
+
+
+## 测试
+
+
+
+
+
 
 
 
