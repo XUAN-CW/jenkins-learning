@@ -115,7 +115,17 @@ mvn -v
   <localRepository>/usr/local/maven_repository</localRepository>
 ```
 
-## Jenkins 配置 maven
+## Jenkins 整合 maven
+
+### 安装插件
+
+| Name                                                         | Version |
+| :----------------------------------------------------------- | :------ |
+| [ Maven Integration](https://plugins.jenkins.io/maven-plugin) | 3.16    |
+
+
+
+
 
 
 
