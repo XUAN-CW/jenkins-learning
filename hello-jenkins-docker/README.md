@@ -23,8 +23,17 @@ docker run \
   --name jenkins \
   --restart=always \
   -u root \
-  -e JAVA_OPTS=-Duser.timezone=Asia/Shanghai \
   -e JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 \
   jenkins/jenkins:2.289.3-lts-centos7
+```
+
+
+
+
+
+```
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+docker exec -it jenkins /bin/bash
 ```
 
