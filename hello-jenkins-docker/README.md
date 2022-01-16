@@ -17,6 +17,7 @@ docker run \
   -p 8080:8080 \
   -p 50000:50000 \
   -v /var/run/docker.sock:/var/run/docker.sock \
+  -v $(which docker):/usr/bin/docker \
   -v /docker-v/jenkins/jenkins_home:/var/jenkins_home \
   -v /docker-v/jenkins/maven:/usr/local/maven \
   -v /docker-v/jenkins/maven_repository:/usr/local/maven_repository  \
