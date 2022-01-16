@@ -1,4 +1,5 @@
 ---
+
 title: Email-Extension-Template
 tags: 
 - Jenkins
@@ -40,13 +41,49 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 | ------------------------ | ------- |
 | Email Extension Template | 1.4     |
 
+## 添加凭据
+
+| Username    | Password                 |
+| ----------- | ------------------------ |
+| ${你的邮箱} | ${授权码} 不是 QQ 密码！ |
+
+![image-20220117051220687](assets/images/image-20220117051220687.png)
+
+
+
 ## Jenkins设置邮箱相关参数
 
-进入 Manage Jenkins → Configure System ，设置如下参数：
+进入 Manage Jenkins → Configure System ，三部分参数：
+
+### Jenkins Location
+
+| 配置项                      | 配置        |
+| --------------------------- | ----------- |
+| System Admin e-mail address | ${你的邮箱} |
+
+![image-20220117045927338](assets/images/image-20220117045927338.png)
+
+
+
+### Extended E-mail Notification
+
+| 配置项                     | 配置        |
+| -------------------------- | ----------- |
+| SMTP server                | smtp.qq.com |
+| SMTP Port                  | 587         |
+| Credentials                | 勾选此项    |
+| Default user e-mail suffix | @qq.com     |
+
+![image-20220117050336148](assets/images/image-20220117050336148.png)
+
+
+
+
+
+### E-mail Notification
 
 | 配置项                           | 配置                     |
 | -------------------------------- | ------------------------ |
-| System Admin e-mail address      | ${你的邮箱}              |
 | SMTP server                      | smtp.qq.com              |
 | Default user e-mail suffix       | @qq.com                  |
 | Use SMTP Authentication          | 勾选此项                 |
@@ -54,7 +91,9 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 | Use SMTP Authentication → 密码   | ${授权码} 不是 QQ 密码！ |
 | SMTP Port                        | 587                      |
 
-![image-20220116195907883](assets/images/image-20220116195907883.png)
+![image-20220117051020998](assets/images/image-20220117051020998.png)
+
+
 
 ## 测试
 
@@ -258,7 +297,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '6eb76399-5a78-48a0-90dc-427141198d53', url: 'http://192.168.19.10:8000/root/email-extension-template-demo-repo.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '051ae883-0895-47ea-91c2-2c1ffdbafced', url: 'http://192.168.19.10:8000/root/email-extension-template-demo-repo.git']]])
             }
         }
     }
