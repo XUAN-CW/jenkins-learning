@@ -1,5 +1,5 @@
 ---
-title: Jenkins插件的安装
+title: Jenkins-plugins-install
 tags: 
 - Jenkins
 - 安装
