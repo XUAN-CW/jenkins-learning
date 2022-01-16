@@ -20,7 +20,7 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 
 ## 前置知识
 
-- 使用 Jenkins clone 代码
+-  Jenkins 使用 pipeline clone gitlab 上的代码
 
 # 邮件授权码
 
@@ -243,6 +243,20 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 进入 Manage Jenkins → Configure System ，设置 **Default Content Type** 为 **HTML(text/html)** ：
 
 ![image-20220116205155018](assets/images/image-20220116205155018.png)
+
+### 创建流水线项目
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
