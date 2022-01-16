@@ -38,13 +38,13 @@ id: 1642330661350248100
 
 进入 Manage Jenkins → Configure System ，设置如下参数：
 
-| 配置项                           | 配置                       |
-| -------------------------------- | -------------------------- |
-| SMTP server                      | smtp.qq.com                |
-| Default user e-mail suffix       | @qq.com                    |
-| Use SMTP Authentication → 用户名 | 你的邮箱                   |
-| Use SMTP Authentication → 密码   | **授权码**，不是 QQ 密码！ |
-| SMTP Port                        | 587                        |
+| 配置项                           | 配置                   |
+| -------------------------------- | ---------------------- |
+| SMTP server                      | smtp.qq.com            |
+| Default user e-mail suffix       | @qq.com                |
+| Use SMTP Authentication → 用户名 | 你的邮箱               |
+| Use SMTP Authentication → 密码   | 授权码，不是 QQ 密码！ |
+| SMTP Port                        | 587                    |
 
 
 
