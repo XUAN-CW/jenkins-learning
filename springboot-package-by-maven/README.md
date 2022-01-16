@@ -69,7 +69,11 @@ git add . && git commit -a -m "hello-springboot"
 
 # Jenkins 安装配置 maven
 
-## 安装 maven
+## 宿主机 maven 安装
+
+### 安装
+
+就正常安装，没什么特别的
 
 ```sh
 # 下载 maven 并解压
@@ -85,13 +89,9 @@ mvn -v
 
 ```
 
-## maven 配置
-
-编辑 `comf/settings.xml` 
-
 ### mirror
 
-国内惯例阿里云镜像
+国内惯例，编辑 `comf/settings.xml` 配置阿里云镜像
 
 ```xml
 ... ...
@@ -109,13 +109,13 @@ mvn -v
 
 ### localRepository
 
-国际惯例， maven 仓库路径
+国际惯例， 编辑 `comf/settings.xml` 配置 maven 仓库路径
 
 ```xml
   <localRepository>/usr/local/maven_repository</localRepository>
 ```
 
-
+## Jenkins 配置 maven
 
 
 
