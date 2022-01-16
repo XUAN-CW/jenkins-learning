@@ -74,11 +74,7 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 | Credentials                | 勾选此项    |
 | Default user e-mail suffix | @qq.com     |
 
-![image-20220117050336148](assets/images/image-20220117050336148.png)
-
-
-
-
+![image-20220117051741708](assets/images/image-20220117051741708.png)
 
 ### E-mail Notification
 
