@@ -302,7 +302,7 @@ pipeline {
             emailext(
                 subject: '构建通知：${PROJECT_NAME} - Build # ${BUILD_NUMBER} -${BUILD_STATUS}!',
                 body: '${FILE,path="jenkins-email-notification-template.html"}',
-                to: '35*87@qq.com'
+                to: '35******87@qq.com'
             )
         }
     }
