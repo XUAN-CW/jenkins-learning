@@ -283,7 +283,7 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 
 ### 创建 pipeline 项目
 
-Email-Extension-Template-demo-job
+创建 pipeline 项目 Email-Extension-Template-demo-job ，clone 不多废话了，重点是 post 部分：
 
 ```groovy
 
