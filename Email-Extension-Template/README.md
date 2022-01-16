@@ -248,6 +248,8 @@ Jenkins 构建后发送邮件，这里使用 QQ 邮箱提供邮件服务
 
 ### 创建 pipeline 项目
 
+Email-Extension-Template-demo-job
+
 ```groovy
 
 pipeline {
