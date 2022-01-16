@@ -85,11 +85,35 @@ mvn -v
 
 ```
 
+## maven 配置
 
+编辑 `comf/settings.xml` 
 
+### mirror
 
+国内惯例阿里云镜像
 
+```xml
+... ...
+<mirrors>
+      ... ...
+    <mirror>  
+      <id>alimaven</id>  
+      <name>aliyun maven</name>  
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+      <mirrorOf>central</mirrorOf>          
+    </mirror> 
+  </mirrors>
+... ...
+```
 
+### localRepository
+
+国际惯例， maven 仓库路径
+
+```xml
+  <localRepository>/usr/local/maven_repository</localRepository>
+```
 
 
 
