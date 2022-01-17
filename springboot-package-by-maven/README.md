@@ -27,15 +27,7 @@ Jenkins 中使用 maven 打包 spring boot 项目
 
 准备一个 spring boot 的 hello world 项目即可
 
-## 创建 hello-springboot 仓库
-
-在 gitlab 中创建 hello-springboot 
-
-## clone 
-
-clone  hello-springboot 项目到本地
-
-## 创建 spring boot 项目
+## 创建 spring boot 的 hello world 项目
 
 ### 创建项目
 
@@ -55,17 +47,9 @@ public class HelloController {
 }
 ```
 
-## commit
+## push 到远程仓库
 
-提交 spring boot 项目
-
-```sh
-git add . && git commit -a -m "hello-springboot"
-```
-
-## push
-
- push 本地 hello-springboot 仓库到远程仓库，然后你在远程仓库就可以看见创建好的 springboot 项目
+上面的项目为一个仓库，push 到远程仓库
 
 # Jenkins 安装配置 maven
 
