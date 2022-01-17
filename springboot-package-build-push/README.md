@@ -102,8 +102,6 @@ pipeline {
 
 ```
 
-
-
 # 附加内容：Authenticating with maven settings
 
 如果为了安全起见，你不想把 docker 仓库的地址、用户名、密码写在 pom.xml 里，那 dockerfile-maven-plugin 提供了 [Authenticating with maven settings](https://github.com/spotify/dockerfile-maven/blob/master/docs/authentication.md#authenticating-with-maven-settingsxml)  方法。用这个方法我成功了，说一个我当时懵逼的点：
