@@ -127,7 +127,29 @@ mvn -v
 
 进入 Manage Jenkins → Configure System 
 
+# pipeline
 
+添加 clone 代码不废话了，直接给出最终 script ：
+
+```groovy
+pipeline {
+    agent any
+
+    stages {
+        stage('clone') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '0d41310d-a4b9-4c28-bc22-c28849deda15', url: 'http://192.168.19.10:8000/root/hello-springboot.git']]])
+            }
+        }
+        stage('package') {
+            steps {
+                sh label: '', script: 'mvn clean package'
+            }
+        }
+    }
+}
+
+```
 
 
 
