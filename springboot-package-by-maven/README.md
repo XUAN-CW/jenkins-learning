@@ -33,7 +33,7 @@ Jenkins 中使用 maven 打包 spring boot 项目
 
 ## clone 
 
-clone  hello-springboot 项目
+clone  hello-springboot 项目到本地
 
 ## 创建 spring boot 项目
 
