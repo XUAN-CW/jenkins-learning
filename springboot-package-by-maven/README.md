@@ -155,7 +155,7 @@ pipeline {
 
 ## 打包结果
 
-在 ${JENKINS_HOME}/workspace/springboot-package-by-maven-demo-job/target 目录下，你应该可以看到 hello-springboot-0.0.1-SNAPSHOT.jar 文件，这就是打包好的 spring boot 项目
+在 **${JENKINS_HOME}/workspace/springboot-package-by-maven-demo-job/target** 目录下，你应该可以看到 **hello-springboot-0.0.1-SNAPSHOT.jar** 文件，这就是打包好的 spring boot 项目
 
 
 
