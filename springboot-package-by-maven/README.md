@@ -65,7 +65,7 @@ git add . && git commit -a -m "hello-springboot"
 
 ## push
 
- push 本地 hello-springboot 项目到远程仓库，然后你在远程仓库就可以看见创建好的 springboot 项目
+ push 本地 hello-springboot 仓库到远程仓库，然后你在远程仓库就可以看见创建好的 springboot 项目
 
 # Jenkins 安装配置 maven
 
