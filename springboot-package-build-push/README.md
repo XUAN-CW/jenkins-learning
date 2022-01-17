@@ -81,7 +81,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 # pipeline
 
-springboot-package-build-push-demo-job
+创建名为 springboot-package-build-push-demo-job 的流水线风格 item 
 
 ```sh
 pipeline {
