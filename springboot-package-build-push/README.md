@@ -77,7 +77,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 # pipeline
 
-创建名为 springboot-package-build-push-demo-job 的 pipeline 、 clone 代码之类的不废话了，直接给出最终 script ：
+创建名为 springboot-package-build-push-demo-job 的 pipeline 、 clone 代码之类的不废话了，直接给出最终 script 。执行完成后可见 harbor 仓库多了一个由 hello-springboot 项目打包出来的镜像
 
 ```sh
 pipeline {
