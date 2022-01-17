@@ -49,7 +49,7 @@ public class HelloController {
 在项目根路径下创建 **dockerfile** ，内容如下：
 
 ```dockerfile
-#FROM java:8
+# FROM java:8
 FROM openjdk:8-jdk-alpine
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
