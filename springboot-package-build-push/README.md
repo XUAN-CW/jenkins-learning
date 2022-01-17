@@ -43,9 +43,9 @@ public class HelloController {
 }
 ```
 
-## Dockerfile
+## dockerfile
 
-在项目根路径下创建 **Dockerfile** ，内容如下：
+在项目根路径下创建 **dockerfile** ，内容如下：
 
 ```dockerfile
 #FROM java:8
@@ -79,7 +79,29 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 
 
+# pipeline
 
+springboot-package-build-push-demo-job
+
+```sh
+pipeline {
+    agent any
+
+    stages {
+        stage('clone') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: '0d41310d-a4b9-4c28-bc22-c28849deda15', url: 'http://192.168.19.10:8000/root/hello-springboot.git']]])
+            }
+        }
+        stage('package') {
+            steps {
+                sh 'mvn clean package dockerfile:build'
+            }
+        }
+    }
+}
+
+```
 
 
 
