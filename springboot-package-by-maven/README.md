@@ -129,7 +129,7 @@ mvn -v
 
 # pipeline
 
-添加 clone 代码不废话了，直接给出最终 script ：
+创建 pipeline 、 clone 代码不废话了，直接给出最终 script ：
 
 ```groovy
 pipeline {
