@@ -23,3 +23,20 @@ Jenkins 中使用 maven 打包 spring boot 项目，打成 docker 镜像后 push
 ## 前置知识
 
 -  Jenkins 使用 maven 打包 springboot 项目
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
