@@ -9,7 +9,7 @@ id: 1642371811009915300
 ---
 # 摘要
 
-使用 maven 打包 spring boot 项目
+Jenkins 中使用 maven 打包 spring boot 项目
 
 # 准备工作
 
