@@ -56,7 +56,26 @@ EXPOSE 8088
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
+## dockerfile-maven-plugin
 
+在 pom.xml 中添加插件：
+
+```xml
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.13</version>
+                <configuration>
+                    <repository>192.168.18.10:85/library/${project.artifactId}</repository>
+                    <tag>${project.version}</tag>
+                    <username>admin</username>
+                    <password>Harbor12345</password>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                </configuration>
+            </plugin>
+```
 
 
 
