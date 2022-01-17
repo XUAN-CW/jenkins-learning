@@ -115,7 +115,7 @@ mvn -v
 
 ## script 
 
-创建 pipeline 风格的 springboot-package-by-maven-demo-job 项目、 clone 代码不废话了，直接给出最终 script ：
+创建名为 springboot-package-by-maven-demo-job 的 pipeline 、 clone 代码之类的不废话了，直接给出最终 script ：
 
 ```groovy
 pipeline {
