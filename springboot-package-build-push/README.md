@@ -56,7 +56,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
 ## dockerfile-maven-plugin
 
-在 pom.xml 中添加插件：
+这是项目的核心，详情可见 [官网](https://github.com/spotify/dockerfile-maven) ，在这里我们用它来build 、push 镜像。使用方法就是在 pom.xml 中添加插件：
 
 ```xml
             <plugin>
@@ -74,8 +74,6 @@ ENTRYPOINT ["java","-jar","/app.jar"]
                 </configuration>
             </plugin>
 ```
-
-
 
 # pipeline
 
