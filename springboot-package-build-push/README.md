@@ -95,7 +95,7 @@ pipeline {
         }
         stage('package') {
             steps {
-                sh 'mvn clean package dockerfile:build'
+                sh 'mvn clean package dockerfile:build dockerfile:push'
             }
         }
     }
