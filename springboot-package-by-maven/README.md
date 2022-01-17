@@ -129,7 +129,9 @@ mvn -v
 
 # pipeline
 
-创建 pipeline 、 clone 代码不废话了，直接给出最终 script ：
+## script 
+
+创建 pipeline 风格的 springboot-package-by-maven-demo-job 项目、 clone 代码不废话了，直接给出最终 script ：
 
 ```groovy
 pipeline {
@@ -151,9 +153,9 @@ pipeline {
 
 ```
 
+## 打包结果
 
-
-
+在 ${JENKINS_HOME}/workspace/springboot-package-by-maven-demo-job/target 目录下，你应该可以看到 hello-springboot-0.0.1-SNAPSHOT.jar 文件，这就是打包好的 spring boot 项目
 
 
 
