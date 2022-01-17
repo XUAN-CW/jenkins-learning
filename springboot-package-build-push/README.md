@@ -105,7 +105,7 @@ pipeline {
 
 # 附加内容：Authenticating with maven settings
 
-如果为了安全起见，你不想把 docker 仓库的地址、用户名、密码写在 pom.xml 里，那 dockerfile-maven-plugin 提供了 [Authenticating with maven settings.xml](https://github.com/spotify/dockerfile-maven/blob/master/docs/authentication.md#authenticating-with-maven-settingsxml)  方法。用这个方法我成功了，说一个我当时懵逼的点：
+如果为了安全起见，你不想把 docker 仓库的地址、用户名、密码写在 pom.xml 里，那 dockerfile-maven-plugin 提供了 [Authenticating with maven settings](https://github.com/spotify/dockerfile-maven/blob/master/docs/authentication.md#authenticating-with-maven-settingsxml)  方法。用这个方法我成功了，说一个我当时懵逼的点：
 
 your maven settings file 是指 maven 的 settings.xml (就是你配置阿里云镜像那个 setting.xml) 。这个地方不要配错了，在哪里执行的 `mvn dockerfile:push` 就配置哪里的 settings.xml ，如果你像我一样，在虚拟机上执行的  `mvn dockerfile:push` ，那就要修改虚拟机上的 settings.xml ，修改本地的 settings.xml 是没用的！
 
