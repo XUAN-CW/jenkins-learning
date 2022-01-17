@@ -10,7 +10,7 @@ Jenkins 中使用 maven 打包 spring boot 项目，打成 docker 镜像后 push
 
 # 准备工作
 
-1. jenkins-2.289.3 
+1. 安装好 jenkins-2.289.3 
 2.  gitlab-ce_12.4.2-ce.0 
     -  访问 http://192.168.19.10:8000/ 可见管理界面，账号为 **root** ，密码为 **rootroot** 
 3. apache-maven-3.6.3-bin.tar.gz
