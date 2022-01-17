@@ -14,11 +14,9 @@ Jenkins 中使用 maven 打包 spring boot 项目，打成 docker 镜像后 push
 
 1. jenkins-2.289.3 
 2.  gitlab-ce_12.4.2-ce.0 
-    -  访问 http://192.168.19.10:8000/ 可见管理界面
-    -  账号为 **root** ，密码为 **rootroot** 
+    -  访问 http://192.168.19.10:8000/ 可见管理界面，账号为 **root** ，密码为 **rootroot** 
 3. harbor-offline-installer-v1.9.2.tgz 
-   - 访问 http://192.168.18.10:85/ 可见管理界面
-   - 账号为 **admin** ，密码为 **Harbor12345** 
+   - 访问 http://192.168.18.10:85/ 可见管理界面，账号为 **admin** ，密码为 **Harbor12345** 
    - Jenkins 服务器能够成功地 push 镜像到 harbor 仓库！！！
    - Jenkins 服务器能够成功地 push 镜像到 harbor 仓库！！！
    - Jenkins 服务器能够成功地 push 镜像到 harbor 仓库！！!
