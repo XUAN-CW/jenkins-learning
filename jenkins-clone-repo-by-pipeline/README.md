@@ -13,7 +13,12 @@ jenkins 使用 pipeline 克隆仓库
 
 ## jenkins
 
-安装好 jenkins-2.289.3 
+| name     | version | 安装位置           |
+| -------- | ------- | ------------------ |
+| jenkins  | 2.289.3 | Jenkins 所在服务器 |
+| git      | 1.8.3.1 | Jenkins 所在服务器 |
+| Pipeline | 2.6     | Jenkins 插件       |
+| Git      | 4.10.2  | Jenkins 插件       |
 
 ## gitlab
 
@@ -28,14 +33,6 @@ jenkins 使用 pipeline 克隆仓库
 ![image-20220115214014997](assets/images/image-20220115214014997.png)
 
 # Jenkins clone 仓库
-
-## 安装插件 
-
-| name     | version | 安装位置           |
-| -------- | ------- | ------------------ |
-| Pipeline | 2.6     | Jenkins 插件       |
-| Git      | 4.10.2  | Jenkins 插件       |
-| git      | 1.8.3.1 | Jenkins 所在服务器 |
 
 ## 添加凭据
 
