@@ -111,6 +111,16 @@ mvn -v
 
 进入 Manage Jenkins → Configure System 
 
+
+
+| key        | value                               |
+| ---------- | ----------------------------------- |
+| JAVA_HOME  | /usr/lib/jvm/adoptopenjdk-8-hotspot |
+| M2_HOME    | /usr/local/maven                    |
+| PATH+EXTRA | $M2_HOME/bin                        |
+
+![image-20220125173727540](assets/images/image-20220125173727540.png)
+
 # pipeline
 
 ## script 
