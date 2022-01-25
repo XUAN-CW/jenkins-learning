@@ -25,6 +25,7 @@ docker run \
   --restart=always \
   -u root \
   -e JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 \
+  -e JAVA_OPTS=-Duser.timezone=CN \
   -e TZ=Asia/Shanghai \
   jenkins/jenkins:2.289.3-lts-centos7
 ```
