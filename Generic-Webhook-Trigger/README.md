@@ -84,5 +84,23 @@ Test → Push events 后出现：
 
 并且 Jenkins 开始构建任务则为成功
 
+# only be triggered
+
+上面的构建方式有一个缺点：在有多个 job 的情况下，当任何一个 git 仓库触发 trigger ，Jenkins 就无法区分应该开始构建哪个 job 。解决这个问题，只需设置 token ,然后在 URL 中带上 token 即可
+
+## 设置 token
+
+这里我设置 token 为 springboot 
+
+![image-20220206014642672](assets/images/image-20220206014642672.png)
+
+## URL
+
+ URL 中带上 token 
+
+```
+http://admin:11713304e6422e73e7a972f61df4b050c1@192.168.19.10:8080/generic-webhook-trigger/invoke?token=springboot
+```
+
 
 
