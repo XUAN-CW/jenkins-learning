@@ -96,3 +96,22 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 # 相关网站
 
  [清华大学开源软件镜像站-Jenkins](https://mirrors.tuna.tsinghua.edu.cn/jenkins/) 
+
+# 常用插件
+
+## 环境
+
+```
+docker pull jenkins/jenkins:2.289.3-lts-centos7
+```
+
+## 插件
+
+```
+jenkins-plugin-cli --plugins workflow-aggregator:2.7
+```
+
+
+
+
+
