@@ -8,10 +8,8 @@ id: 1642363684082128500
 
 
 
-使用dockers部署 Jenkins 
-
 ```sh
-
+# 一键部署
 docker run \
   -itd \
   -p 8080:8080 \
@@ -34,9 +32,10 @@ docker run \
 
 
 
-```
+```sh
+# 初始化密码
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
-
+# 进入容器
 docker exec -it jenkins /bin/bash
 ```
 
