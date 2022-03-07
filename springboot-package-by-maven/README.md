@@ -109,9 +109,7 @@ mvn -v
 
 ### Configure System 
 
-进入 Manage Jenkins → Configure System 
-
-
+进入 Manage Jenkins → Configure System → Global properties → Environment variables
 
 | key        | value                               |
 | ---------- | ----------------------------------- |
