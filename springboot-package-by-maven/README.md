@@ -75,7 +75,7 @@ mvn -v
 
 ### mirror
 
-国内惯例，编辑 `comf/settings.xml` 配置阿里云镜像
+国内惯例，编辑 `conf/settings.xml` 配置阿里云镜像
 
 ```xml
 ... ...
