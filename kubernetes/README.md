@@ -52,5 +52,9 @@ apply：
 kubectl apply -f jenkins-agent.yaml
 ```
 
+检查：
 
+```
+kubectl get role jenkins-agent -n jenkins-agents
+```
 
