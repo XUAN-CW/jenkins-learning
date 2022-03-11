@@ -78,6 +78,18 @@ subjects:
 
 ```
 
+apply：
+
+```sh
+kubectl apply -f jenkins-agent-role-binding.yaml
+```
+
+检查：
+
+```
+kubectl get rolebinding -n jenkins-agents
+```
+
 
 
 
