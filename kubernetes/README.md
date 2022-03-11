@@ -25,8 +25,6 @@ check：
 kubectl get serviceaccount -n jenkins-agents
 ```
 
-
-
 ## Create a Role and Rolebinding
 
 
