@@ -96,5 +96,10 @@ kubectl get rolebinding -n jenkins-agents
 
 
 
+# 参考
 
+ [Jenkins Kubernetes Plugin_ Running Agents In Other Clusters.html](assets\references\Jenkins Kubernetes Plugin_ Running Agents In Other Clusters.html) 
 
+ [k8s_Jenkins_GitLab-自动化部署项目.html](assets\references\k8s_Jenkins_GitLab-自动化部署项目.html) 
+
+ [kubernetes中部署Jenkins并简单使用.html](assets\references\kubernetes中部署Jenkins并简单使用.html) 
