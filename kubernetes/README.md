@@ -103,3 +103,7 @@ kubectl get rolebinding -n jenkins-agents
  [k8s_Jenkins_GitLab-自动化部署项目.html](assets\references\k8s_Jenkins_GitLab-自动化部署项目.html) 
 
  [kubernetes中部署Jenkins并简单使用.html](assets\references\kubernetes中部署Jenkins并简单使用.html) 
+
+
+
+https://devopscube.com/jenkins-build-agents-kubernetes/
