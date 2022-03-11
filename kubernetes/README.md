@@ -19,3 +19,38 @@ kubectl create serviceaccount jenkins-agent -n jenkins-agents
 kubectl get secret $(kubectl get sa jenkins-agent -n jenkins-agents -o jsonpath={.secrets[0].name}) -n jenkins-agents -o jsonpath={.data.token} | base64 --decode
 ```
 
+
+
+## Create a Role and Rolebinding
+
+
+
+创建 `jenkins-agent.yaml` ：
+
+```yaml
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: jenkins-agent
+  namespace: jenkins-agents
+rules:
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["create","delete","get","list","patch","update","watch"]
+- apiGroups: [""]
+  resources: ["pods/exec"]
+  verbs: ["create","delete","get","list","patch","update","watch"]
+- apiGroups: [""]
+  resources: ["pods/log"]
+  verbs: ["get","list","watch"]
+
+```
+
+apply：
+
+```sh
+kubectl apply -f jenkins-agent.yaml
+```
+
+
+
