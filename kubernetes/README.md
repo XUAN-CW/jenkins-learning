@@ -58,3 +58,27 @@ kubectl apply -f jenkins-agent.yaml
 kubectl get role jenkins-agent -n jenkins-agents
 ```
 
+## Create a Rolebinding
+
+创建 `jenkins-agent-role-binding.yaml` ：
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: jenkins-agent
+  namespace: jenkins-agents
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: jenkins-agent
+subjects:
+- kind: ServiceAccount
+  name: jenkins-agent
+
+```
+
+
+
+
+
