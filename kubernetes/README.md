@@ -19,6 +19,12 @@ kubectl create serviceaccount jenkins-agent -n jenkins-agents
 kubectl get secret $(kubectl get sa jenkins-agent -n jenkins-agents -o jsonpath={.secrets[0].name}) -n jenkins-agents -o jsonpath={.data.token} | base64 --decode
 ```
 
+check：
+
+```sh
+kubectl get serviceaccount -n jenkins-agents
+```
+
 
 
 ## Create a Role and Rolebinding
