@@ -6,7 +6,7 @@ id: 1646972911706652200
 ---
 # 摘要
 
-https://devopscube.com/jenkins-build-agents-kubernetes/
+ [How To Setup Jenkins Build Agents On Kubernetes Pods.html](assets\references\How To Setup Jenkins Build Agents On Kubernetes Pods.html) 
 
 # 参考
 
