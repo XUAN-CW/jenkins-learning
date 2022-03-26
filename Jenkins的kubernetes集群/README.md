@@ -12,7 +12,7 @@ id: 1647947326284002500
 
 不废话了， [How To Setup Jenkins On Kubernetes Cluster.html](assets\references\How To Setup Jenkins On Kubernetes Cluster.html) 说得很清楚了，这里做出说明：
 
-1.  本文 Jenkins 所在 namespace 是 **devops-tools** 
+- 本文 Jenkins 所在 namespace 是 **devops-tools** 
 
 # 使用 Jenkins 
 
