@@ -6,7 +6,7 @@ id: 1647947326284002500
 ---
 # 摘要
 
-首先，我参考了[How To Setup Jenkins On Kubernetes Cluster.html](assets\references\How To Setup Jenkins On Kubernetes Cluster.html) 在 Kubernetes 中搭建了集群，然后，我参考 [How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md](assets\references\How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md) 使用 Jenkins 运行了 job
+首先，我参考了[How To Setup Jenkins On Kubernetes Cluster.html](assets\references\How To Setup Jenkins On Kubernetes Cluster.html) 在 Kubernetes 中搭建了集群，然后，我参考 [How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md](assets\references\How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md) （内含视频）使用 Jenkins 运行了 job
 
 
 
