@@ -81,7 +81,7 @@ id: 1647947326284002500
 
 ### 启用 WebSocket
 
-我也不知道为啥，启用就对了，不启用这个，会报下面的错误：
+[How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md](assets\references\How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md) 里的视频说了，但我听不懂，所以我也不知道为啥。总之启用就对了，不启用这个，会报下面的错误：
 
 ```
 SEVERE: http://172.31.0.2:32000/ provided port:50000 is not reachable
