@@ -128,7 +128,102 @@ pipeline {
 }
 ```
 
+下面是控制台输出：
 
+```
+Started by user admin
+[Pipeline] Start of Pipeline
+[Pipeline] podTemplate
+[Pipeline] {
+[Pipeline] node
+Created Pod: kubernetes devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Scheduled] Successfully assigned devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd to k8s-node2
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Pulled] Container image "maven:alpine" already present on machine
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Created] Created container maven
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Started] Started container maven
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Pulled] Container image "jenkins/inbound-agent:4.11-1-jdk11" already present on machine
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Created] Created container jnlp
+[Normal][devops-tools/k8s-jenkins-7-4d3k0-hlk8l-0nwqd][Started] Started container jnlp
+Agent k8s-jenkins-7-4d3k0-hlk8l-0nwqd is provisioned from template k8s-jenkins_7-4d3k0-hlk8l
+---
+apiVersion: "v1"
+kind: "Pod"
+metadata:
+  annotations:
+    buildUrl: "http://172.31.0.2:32000/job/k8s-jenkins/7/"
+    runUrl: "job/k8s-jenkins/7/"
+  labels:
+    jenkins: "slave"
+    jenkins/label-digest: "9925a6e7f3d8aaae32ab958738b8252367270007"
+    jenkins/label: "k8s-jenkins_7-4d3k0"
+  name: "k8s-jenkins-7-4d3k0-hlk8l-0nwqd"
+spec:
+  containers:
+  - command:
+    - "cat"
+    image: "maven:alpine"
+    name: "maven"
+    tty: true
+    volumeMounts:
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  - env:
+    - name: "JENKINS_SECRET"
+      value: "********"
+    - name: "JENKINS_AGENT_NAME"
+      value: "k8s-jenkins-7-4d3k0-hlk8l-0nwqd"
+    - name: "JENKINS_WEB_SOCKET"
+      value: "true"
+    - name: "JENKINS_NAME"
+      value: "k8s-jenkins-7-4d3k0-hlk8l-0nwqd"
+    - name: "JENKINS_AGENT_WORKDIR"
+      value: "/home/jenkins/agent"
+    - name: "JENKINS_URL"
+      value: "http://172.31.0.2:32000/"
+    image: "jenkins/inbound-agent:4.11-1-jdk11"
+    name: "jnlp"
+    resources:
+      limits: {}
+      requests:
+        memory: "256Mi"
+        cpu: "100m"
+    volumeMounts:
+    - mountPath: "/home/jenkins/agent"
+      name: "workspace-volume"
+      readOnly: false
+  nodeSelector:
+    kubernetes.io/os: "linux"
+  restartPolicy: "Never"
+  volumes:
+  - emptyDir:
+      medium: ""
+    name: "workspace-volume"
+
+Running on k8s-jenkins-7-4d3k0-hlk8l-0nwqd in /home/jenkins/agent/workspace/k8s-jenkins
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Run maven)
+[Pipeline] container
+[Pipeline] {
+[Pipeline] sh
++ mvn -version
+Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-04T19:00:29Z)
+Maven home: /usr/share/maven
+Java version: 1.8.0_212, vendor: IcedTea, runtime: /usr/lib/jvm/java-1.8-openjdk/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.10.0-1160.59.1.el7.x86_64", arch: "amd64", family: "unix"
+[Pipeline] }
+[Pipeline] // container
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] }
+[Pipeline] // podTemplate
+[Pipeline] End of Pipeline
+Finished: SUCCESS
+```
 
 
 
