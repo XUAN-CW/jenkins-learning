@@ -12,7 +12,7 @@ id: 1648272608987162400
 
 1. [SSH Pipeline Steps](https://plugins.jenkins.io/ssh-steps) 
 
-# 测试
+# 登录远程主机并执行命令
 
 新建一个 **Pipeline** job，粘贴下面的 Pipeline 脚本，然后 **Build Now** 
 
@@ -35,6 +35,21 @@ node {
 
 然后就可以在 `172.31.0.2` 上看到 **test.txt** 
 
-# 参考
+# 复制文件到远程主机
 
- [CI_CD Kubernetes _ Setting up CI_CD Jenkins pipeline for kubernetes.html](assets\references\CI_CD Kubernetes _ Setting up CI_CD Jenkins pipeline for kubernetes.html) 
+假如你想复制文件到远程主机，像下面这样写就行：
+
+```groovy
+        stage('Put k8s-spring-boot-deployment.yml onto k8smaster') {
+            sshPut remote: remote, from: 'k8s-spring-boot-deployment.yml', into: '.'
+        }
+```
+
+更多信息见 [CI_CD Kubernetes _ Setting up CI_CD Jenkins pipeline for kubernetes.html](assets\references\CI_CD Kubernetes _ Setting up CI_CD Jenkins pipeline for kubernetes.html) 
+
+
+
+
+
+
+
