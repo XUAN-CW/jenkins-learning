@@ -16,7 +16,7 @@ id: 1648272608987162400
 
 新建一个 **Pipeline** job，粘贴下面的 Pipeline 脚本，然后 **Build Now** 
 
-```
+```groovy
 node {
     stage("SSH Into Server") {
         def remote = [:]
@@ -30,7 +30,6 @@ node {
           sshCommand remote: remote, command: "ls > test.txt"
         }
     }
-
 }
 ```
 
