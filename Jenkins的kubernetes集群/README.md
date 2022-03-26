@@ -8,7 +8,7 @@ id: 1647947326284002500
 
 
 
-
+[How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md](assets\references\How-to-Use-Kubernetes-Pods-As-Jenkins-Agents.md) 
 
 # 参考
 
