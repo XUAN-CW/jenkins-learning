@@ -36,5 +36,6 @@ node {
 
 然后就可以在 `172.31.0.2` 上看到 **test.txt** 
 
+# 参考
 
-
+ [CI_CD Kubernetes _ Setting up CI_CD Jenkins pipeline for kubernetes.html](assets\references\CI_CD Kubernetes _ Setting up CI_CD Jenkins pipeline for kubernetes.html) 
