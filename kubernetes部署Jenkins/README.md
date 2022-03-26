@@ -12,7 +12,6 @@ id: 1647947326284002500
 
 # 参考
 
- [How To Setup Jenkins On Kubernetes Cluster.html](assets\references\How To Setup Jenkins On Kubernetes Cluster.html) 
-
- [kubernetes-jenkins.7z](assets\data\kubernetes-jenkins.7z) 
+-  [How To Setup Jenkins Build Agents On Kubernetes Pods.html](assets\references\How To Setup Jenkins Build Agents On Kubernetes Pods.html) 
+- 教程 [How To Setup Jenkins On Kubernetes Cluster.html](assets\references\How To Setup Jenkins On Kubernetes Cluster.html) | 资料 [kubernetes-jenkins.7z](assets\data\kubernetes-jenkins.7z) 
 
