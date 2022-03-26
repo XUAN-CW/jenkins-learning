@@ -10,7 +10,9 @@ id: 1647947326284002500
 
 
 
+# kubernetes 搭建 Jenkins 集群
 
+不废话了， [How To Setup Jenkins On Kubernetes Cluster.html](assets\references\How To Setup Jenkins On Kubernetes Cluster.html) 说得很清楚了
 
 
 
